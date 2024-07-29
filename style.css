@@ -1,0 +1,41 @@
+body {
+    background:url("background.jpg")
+}
+
+#titulo {
+    text-align: left;
+}
+
+#Modal {
+    float: right;
+}
+
+img {
+    width: 100%;
+}
+
+#start, #status {
+    font-size: 22px;
+}
+
+h4 {
+    background-color: #f5f5f5;
+    line-height: 4;
+    margin: 0px;
+}
+
+.modal-dialog {
+    width: 90%;
+}
+
+.instructionImage {
+    display: inline-block;
+    width: 45%;
+}
+
+video {
+background: url(game_console.png);
+background-size: cover;
+background-position: center;
+padding: 25px;
+}
