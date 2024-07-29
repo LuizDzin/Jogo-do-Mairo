@@ -286,19 +286,19 @@ function autoControl(character){
 function manualControl(character){
   
   if(character.live){
-    if(noseX > 300){
+    if(noseX < 300){
       character.velocity.x-=gameConfig.moveSpeed;
       character.changeAnimation('move');
       character.mirrorX(-1);
     }
 
-    if(keyDown(control.right)){
+    if(noseX > 300){
       character.velocity.x+=gameConfig.moveSpeed;
       character.changeAnimation('move');
       character.mirrorX(1);
     }
 
-    if(!keyDown(control.left)&&!keyDown(control.right)&&!keyDown(control.up)){ 
+    if(!noseX < 300 &&!noseX > 300 &&!noseY < 200){ 
       character.changeAnimation('stand');
     }
   }
